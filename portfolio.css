@@ -1,0 +1,483 @@
+/***
+copyright aman
+content 
+navbar - 28
+
+
+***/
+
+
+
+*{
+	box-sizing: border-box;
+}
+body{
+	padding: 0!important;
+	margin:0!important;
+	font-family: 'Josefin Sans', sans-serif;
+	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+h3{
+	font-size: 1.5rem;
+}
+h2{
+	font-size: 2rem;
+	text-shadow: 2px 2px #222;
+}
+/* first page *********/
+.first{
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+
+}
+/**nav start**/
+.navbar{
+	
+	display: flex;
+	justify-content:space-between; 
+	align-items: center;
+	font-size: 1.5rem;
+	width: 100%;
+	border: 2px solid gray;
+}
+#burger{
+	display: none;
+}
+
+.nav_items{
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 15px;
+	width: 50%;
+
+}
+.nav_items a{
+	text-decoration: none;
+	cursor: pointer;
+	color:#000;
+	position: relative;
+	padding: 5px;
+
+
+}
+
+.nav_items a span{
+	width: 100%;
+	height: 25%;
+	position: absolute;
+	z-index: -1;
+	top:0;
+	left: 0;
+	transform: scaleX(0);
+	transition: transform 0.5s;
+	background-color: #000;
+	transform-origin: left;
+}
+
+.nav_items a span:nth-child(2){
+	top:25%;
+	transition-delay: 0.15s;
+}
+
+.nav_items a span:nth-child(3){
+	top:50%;
+	transition-delay: 0.25s;
+}
+
+.nav_items a span:nth-child(4){
+	top:75%;
+	transition-delay: 0.35s;
+}
+.nav_items a:hover{
+	color:#fff;
+}
+
+.nav_items a:hover span{
+	transform: scaleX(1);
+}
+.logo{
+	padding: 5px 15px;
+	display: flex;
+	justify-content: space-between;
+}
+.navbar .nav_items .Contact{
+	margin-right: 10px;
+}
+
+/**navbar ends**/
+.content_first{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100vw;
+	padding: 50px 10px;
+}
+.content_first img{
+	width: 350px;
+	border-radius: 50%;
+	border: 2px solid gray;
+}
+.content_first p{
+	font-size: 1.5rem;
+	line-height: 40px;
+	font-weight: bold;
+	text-align: center;
+	color:#611414;
+}
+.content_first span i {
+	font-size: 3rem;
+}
+
+/****first page ends****/
+
+.second{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.heading{
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: sans-serif;
+	line-height: 40px;
+	font-weight: bold;
+	height: 15%;
+}
+
+.box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 1.2rem;
+	height:85%; 
+	border-left:3px solid black;
+	padding: 0;
+	margin-left: 0;
+	margin-top: 0;
+}
+
+.box .box_content {
+	padding-left: 50px;
+	position: relative;
+	width: 100%;
+}
+.box .box_content i{
+	position: absolute;
+	left: 0;
+
+	font-size: 45px;
+}
+.box .box_content ul li{
+	list-style-type: none;
+}
+.box .box_content h2{
+	text-align: left;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-left: 10px;
+}
+
+/***second ends*/
+
+/*8 third start*/
+
+.third{
+	padding: 30px;
+	height: 130vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.third h1{
+	text-align: center;
+	font-size: 2.3rem;
+}
+.third p{
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.third .container {
+  width: 70%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44a36;} /* Red */
+.php {width: 60%; background-color: #808080;} /* Dark Grey */
+
+/***third page ends***/
+
+/**fourth page starts**/
+.fourth{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.fourth h1{
+	font-size: 2.3rem;
+
+}
+.fourth .icon {
+	padding-top: 35px;
+	margin:0 auto;
+	position: relative;
+	bottom: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 1.6rem;
+	width: 40%;
+	flex-wrap: wrap;
+}
+.fourth  i {
+	font-size: 1rem;
+	display: inline-block;
+	padding: 5px;
+}
+.fourth  span{
+	display: inline-block;
+	text-align: center;
+}
+.form{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	justify-content: space-around;
+}
+.form form.first_form{
+	padding: 25px;
+	
+}
+.form .second_form{
+	display: none;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */ 
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+	background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+  }
+
+.footer{
+	position: relative;
+	bottom: 0;
+	padding: 8px;
+	text-align: center;
+}
+a:hover i{
+	color:#fff;
+	background-color: rgba(0, 0,0,0.6);
+
+	cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+	.navbar{
+		flex-direction: column;
+	}
+	.nav_items{
+		flex-direction: column;
+	}
+	.navbar{
+		position: static;
+
+	}
+	#burger{
+		display: inline-block;
+		padding-top: 20px;
+	}
+	.remove{
+		display: none;
+	}
+}
+
+/* image gallery */
+*{
+	box-sizing: border-box;
+	font-family: 'Lobster', cursive;
+}
+.lightbox{
+	display: flex;
+	justify-content: center;
+	padding: 0% 5% 5% 5%;
+}
+.lightbox .container{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100%;
+}
+.img img{
+	width: 100%;
+	height: 100%;
+}
+.img{
+	height: 65%;
+}
+.txt{
+	height: 10%;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	padding: 25px;
+	font-size: 1.2rem;
+}
+
+.hover{
+	height: 25%;
+}
+.gallery{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 100%;
+}
+.gallery img{
+	width: 16.66%;
+	height: 90%;
+	opacity: 0.8;
+}
+.gallery img:hover{
+	opacity: 1;
+	border: 1px solid gray;
+}
+
+@media screen and (max-width: 676px){
+	.content_first{
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.form{
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		height: 85%;
+	}
+	.logo{
+		width:100%;
+
+	}
+	.content_first img{
+		width:300px;
+		height: 300px;;
+	}
+	.content_first p{
+		font-size: 1.7rem;
+		align-self: flex-end;
+
+	}
+	.form{
+		overflow: hidden;
+	}
+	.form form.first_form{
+		display: none;
+	}
+	.form iframe{
+		height: 30% !important;
+		width:90% !important;
+	}
+	.form .second_form{
+		display: block;
+	}
+	.second_form input[type=text],.second_form  select,.second_form  textarea {
+		width: 100%; /* Full width */
+		padding: 10px; /* Some padding */ 
+		border: 1px solid #ccc; /* Gray border */
+		border-radius: 4px; /* Rounded borders */
+		box-sizing: border-box; /* Make sure that padding and width stays in place */
+		margin-top: 4px; /* Add a top margin */
+		margin-bottom: 10px; /* Bottom margin */
+	   /* Allow the user to vertically resize the textarea (not horizontally) */
+	  }
+
+.second .box{
+		  margin: 10px 10px 5px 20px;
+	  }
+	  .third{
+		  height: 100vh;
+	  }
+
+
+	.gallery{
+		flex-wrap: wrap;
+		align-content: flex-start;
+
+
+	}
+	.gallery img {
+		width: 33%;
+		height: 48%;
+	}
+	.txt {
+		height: 8%;
+	}
+	.hover{
+		height: 32%;
+	}
+	.img{
+		height: 60%;
+	}
+	.txt{
+		padding: 10px;
+	}
+
+}
+
+section{
+	margin-bottom: 20px;
+}
+
+
